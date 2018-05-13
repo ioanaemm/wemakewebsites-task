@@ -1,0 +1,67 @@
+ .slide {
+  position: relative;
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel .content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.carousel .slide img {
+  width: 100%;
+}
+
+.carousel .content button {
+  background-color: #2D4966;
+  color: #fff;
+  font-family: Helvetica;
+  font-size: 16px;
+  font-weight: 300;
+  height: 52px;
+  letter-spacing: 2px;
+  line-height: 19px;
+  text-align: center;
+  width: 160px;
+  border: none;
+  margin-top: 30px;
+}
+
+.carousel .headline {
+  color: #fff;
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 60px;
+  letter-spacing: 2px;
+  line-height: 70px;
+}
+
+.carousel .subheadline {
+  color: #fff;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.carousel .arrow {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 40%;
+  z-index: 1;
+  text-align: center;
+}
+
+.carousel #left-arrow {
+  left: 70px;
+}
+
+.carousel #right-arrow {
+  right: 50px;
+}
