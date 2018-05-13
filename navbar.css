@@ -1,0 +1,40 @@
+nav {
+  overflow: hidden;
+  margin: 0;
+  box-sizing: border-box;
+  width: 50%;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+nav > ul > li > a {
+  color: #2D4966;
+  font-family: "Roboto Mono", monospace;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  line-height: 21px;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+}
+
+.logoContainer {
+  width: 25%;
+  box-sizing: border-box;
+}
+
+.iconContainer {
+  width: 25%;
+  box-sizing: border-box;
+}
