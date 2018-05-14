@@ -1,0 +1,123 @@
+.shopping-cart {
+  display: inline;
+  position: relative;
+  cursor: pointer;
+}
+
+.cart-wrapper {
+  width: 358px;
+  position: absolute;
+  left: -300px;
+  top: 0px;
+  z-index: 2;
+  padding-top: 30px;
+  display: none;
+}
+
+.shopping-cart:hover .cart-wrapper{
+  display: block;
+}
+
+.cart-main-container {
+  width: 100%;
+  border: 1px solid #EAEAEA;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.17);
+  display: inline-block;
+  text-align: left;
+}
+
+.cart-main-container .cart-headline {
+  color: #181818;
+  font-family: "Roboto Mono";
+  font-size: 22px;
+  font-weight: 500;
+  /* line-height: 29px; */
+  text-align: left;
+  padding: 10px 40px;
+}
+
+.cart-list ul {
+  padding: 0 30px;
+}
+
+.cart-list .cart-item {
+  list-style-type: none;
+  width: 100%;
+  display: flex;
+  margin-bottom: 20px;
+  border-top: 1px solid #EAEAEA;
+  padding-top: 20px;
+}
+
+.cart-img-container {
+  width: 40%;
+  height: 110px;
+  background-color:#EAEAEA;
+}
+
+.cart-img-container img {
+  height: 36px;
+  width: 46px;
+  padding: 35px 35px;
+}
+
+ .cart-product-container {
+  width: 55%;
+  position: relative;
+  margin-left: 5%;
+}
+
+.cart-product-container .cart-product-name {
+  display: inline;
+  color: #191919;
+  font-family: "Roboto Mono";
+  font-size: 16px;
+}
+
+.cart-product-container .total-amount {
+  margin-top: 15px;
+  margin-bottom: -15px;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.cart-product-container .cart-product-subname {
+  color: #979797;
+  font-family: "Roboto Mono";
+  font-size: 13px;
+  line-height: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.cart-product-container .close-button {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: 0;
+}
+
+.counter-container {
+  margin-right: 20px;
+}
+
+.checkout-button {
+  display: block;
+  background-color: #2D4966;
+  border: 0;
+  outline: 0;
+  margin: 30px;
+  width: calc(100% - 60px);
+  color: #fff;
+  box-sizing: border-box;
+  font-size: 16px;
+  padding-bottom: 33px;
+  padding-top: 15px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.checkout-button:hover {
+  opacity: 0.8;
+}

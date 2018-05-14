@@ -5,6 +5,7 @@
     <link rel="stylesheet" type="text/css" href="main.css"/>
     <link rel="stylesheet" type="text/css" href="navbar.css"/>
     <link rel="stylesheet" type="text/css" href="carousel.css"/>
+    <link rel="stylesheet" type="text/css" href="cart.css"/>
     <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Playfair+Display:900|Roboto+Mono:100,300,400,500" rel="stylesheet">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
@@ -69,7 +70,52 @@
           <img src="./assets/icon/search.svg" alt="search icon">
           <img src="./assets/icon/profile.svg" alt="profile icon">
           <img src="./assets/icon/heart.svg" alt="heart icon">
-          <img src="./assets/icon/bag.svg" alt="bag icon">
+          <div class="shopping-cart">
+            <img src="./assets/icon/bag.svg" alt="bag icon">
+            <div class="cart-wrapper">
+              <div class="cart-main-container">
+                <h3 class="cart-headline">Your Cart</h3>
+                <div class="cart-list">
+                    <ul>
+                      <li class="cart-item">
+                        <div class="cart-img-container">
+                          <img src="./assets/Image/Large.svg" alt="placeholder image">
+                        </div>
+                        <div class="cart-product-container">
+                          <h4 class="cart-product-name">Product name</h4>
+                          <img class="close-button" src="./assets/icon/cancel.svg" alt="cancel button">
+                          <p class="cart-product-subname">Variant name</p>
+                          <div class="counter-container">
+                            <span class="decrease-icon"> - </span>
+                            <span class="product-number"> 2 </span>
+                            <span class="increase-icon"> + </span>
+                          </div>
+                          <h3 class="total-amount">£60.00</h3>
+                        </div>
+                      </li>
+
+                      <li class="cart-item">
+                        <div class="cart-img-container">
+                          <img src="./assets/Image/Large.svg" alt="placeholder image">
+                        </div>
+                        <div class="cart-product-container">
+                          <h4 class="cart-product-name">Product name</h4>
+                          <img class="close-button" src="./assets/icon/cancel.svg" alt="cancel button">
+                          <p class="cart-product-subname">Variant name</p>
+                          <div class="counter-container">
+                            <span class="decrease-icon"> - </span>
+                            <span class="product-number"> 2 </span>
+                            <span class="increase-icon"> + </span>
+                          </div>
+                          <h3 class="total-amount">£60.00</h3>
+                        </div>
+                      </li>
+                    </ul>
+                    <button class="checkout-button">CHECKOUT</button>
+                </div>
+            </div>
+            </div>
+          </div>
         </div>
       </header>
       <section class="carousel">
