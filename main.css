@@ -61,7 +61,7 @@ header.mobile .column {
   margin-bottom: 0;
 }
 
-#languageText {
+#language-text {
   font-family: Helvetica;
   font-size: 14px;
   line-height: 17px;
@@ -74,19 +74,19 @@ header.mobile .column {
   text-align: left;
 }
 
-.languagePicker {
+.language-picker {
   box-sizing: border-box;
   width: 20%;
   height: 17px;
   text-align: right;
 }
 
-.languagePicker .icon {
+.language-picker .icon {
   position: relative;
   top: 2px;
 }
 
-.currencyText {
+.currency-text {
   font-family: 'Roboto Mono', monospace;
   font-size: 11px;
   font-weight: 500;
@@ -131,7 +131,7 @@ header.mobile .column {
     padding-right: 6vw;
   }
 
-  #languageText {
+  #language-text {
     font-size: 11px;
   }
 
@@ -164,11 +164,11 @@ header.mobile .column {
     position: relative;
   }
 
-  header.mobile .logoContainer {
+  header.mobile .logo-container {
     text-align: center;
   }
 
-  header.mobile .logoContainer img {
+  header.mobile .logo-container img {
     height: 40px;
     position: relative;
     top: -7px;
@@ -177,12 +177,12 @@ header.mobile .column {
   .currency {
     width: 50%;
   }
-  .languagePicker {
+  .language-picker {
     width: 50%;
     margin-top: 3px;
   }
 
-  .languagePicker .icon {
+  .language-picker .icon {
     top: 3px;
   }
 }

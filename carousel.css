@@ -145,8 +145,8 @@
 }
 
 @media(max-width: 850px) {
-  .iconContainer img,
-  .iconContainer .shopping-cart > img {
+  .icon-container img,
+  .icon-container .shopping-cart > img {
     width: 18px;
   }
 

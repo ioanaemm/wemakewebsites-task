@@ -99,7 +99,7 @@ function animateSlider(time) {
 }
 
 function enableMobileNav() {
-  $('.drawerContainer').click(toggleMobileNav);
+  $('.drawer-container').click(toggleMobileNav);
 }
 
 function toggleMobileNav() {
