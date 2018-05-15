@@ -15,11 +15,23 @@ header {
   padding-top: 25px;
   padding-bottom: 25px;
 }
-
 main {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
+}
+
+header.mobile {
+  /* display: flex; */
+  display: none;
+}
+
+header.mobile .column {
+  width: calc(100% / 3);
+}
+
+.temp-cart {
+  display: none;
 }
 
 #announcement {
@@ -110,6 +122,15 @@ main {
 }
 
 @media(max-width: 767px) {
+  .padded {
+    padding-left: 6vw;
+    padding-right: 6vw;
+  }
+
+  #languageText {
+    font-size: 11px;
+  }
+
   #announcement {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -124,11 +145,40 @@ main {
     display: block;
   }
 
+  header.desktop {
+    display: none;
+  }
+
+  header.mobile {
+    padding-top: 22px;
+    padding-bottom: 0;
+    display: flex;
+  }
+
+  header.mobile .shopping-cart {
+    text-align: right;
+    position: relative;
+  }
+
+  header.mobile .logoContainer {
+    text-align: center;
+  }
+
+  header.mobile .logoContainer img {
+    height: 40px;
+    position: relative;
+    top: -9px;
+  }
+
   .currency {
     width: 50%;
   }
   .languagePicker {
     width: 50%;
-    margin-top: 5px;
+    margin-top: 3px;
+  }
+
+  .languagePicker .icon {
+    top: 3px;
   }
 }

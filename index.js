@@ -1,15 +1,32 @@
 var crtSlide = 0;
 var slideCount = $('.slide').length;
+var MOBILE_BREAKPOINT = 768;
+var isMobile = false;
 
 $(document).ready(function() {
   enableSlider();
+  distributeShoppingCart();
+  $(window).resize(onWindowResize);
+  onWindowResize();
 });
 
+function onWindowResize() {
+  animateSlider(0);
+}
+
+function distributeShoppingCart() {
+  var cartCloneDesktop = $('.temp-cart .cart-wrapper').clone();
+  $('header.desktop .shopping-cart').append(cartCloneDesktop);
+
+  var cartCloneMobile = $('.temp-cart .cart-wrapper').clone();
+  $('header.mobile .shopping-cart').append(cartCloneMobile);
+
+  $('.temp-cart .cart-wrapper').remove();
+}
 
 function enableSlider() {
   $('#left-arrow').click(prevSlide);
   $('#right-arrow').click(nextSlide);
-  $(window).resize(calibrateSlider);
 }
 
 function nextSlide() {
@@ -28,10 +45,6 @@ function prevSlide() {
     crtSlide = slideCount - 1;
   }
   animateSlider(1.5);
-}
-
-function calibrateSlider() {
-  animateSlider(0);
 }
 
 function animateSlider(time) {

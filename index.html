@@ -31,7 +31,18 @@
       <h3 id="announcement-title-standalone">
         ANNOUNCE SOMETHING HERE
       </h3>
-      <header class="padded">
+      <header class="mobile padded">
+        <div class="drawerContainer column">
+          <img src="./assets/Mobile/Elements/ic_drawer.svg" alt="drawer icon">
+        </div>
+        <div class="logoContainer column">
+          <img src="./assets/Image/Large.svg" alt="logo image">
+        </div>
+        <div class="shopping-cart column">
+          <img src="./assets/icon/bag.svg" alt="bag icon">
+        </div>
+      </header>
+      <header class="desktop padded">
         <div class="logoContainer">
           <img src="./assets/Image/Large.svg" alt="logo image">
         </div>
@@ -75,53 +86,58 @@
           <img src="./assets/icon/heart.svg" alt="heart icon">
           <div class="shopping-cart">
             <img src="./assets/icon/bag.svg" alt="bag icon">
-            <div class="cart-wrapper">
-              <div class="cart-main-container">
-                <span class="triangle">▲</span>
-                <h3 class="cart-headline">Your Cart</h3>
-                <div class="cart-list">
-                    <ul>
-                      <li class="cart-item">
-                        <div class="cart-img-container">
-                          <img src="./assets/Image/Large.svg" alt="placeholder image">
-                        </div>
-                        <div class="cart-product-container">
-                          <h4 class="cart-product-name">Product name</h4>
-                          <img class="close-button" src="./assets/icon/cancel.svg" alt="cancel button">
-                          <p class="cart-product-subname">Variant name</p>
-                          <div class="counter-container">
-                            <span class="decrease-icon"> - </span>
-                            <span class="product-number"> 2 </span>
-                            <span class="increase-icon"> + </span>
-                          </div>
-                          <h3 class="total-amount">£60.00</h3>
-                        </div>
-                      </li>
-
-                      <li class="cart-item">
-                        <div class="cart-img-container">
-                          <img src="./assets/Image/Large.svg" alt="placeholder image">
-                        </div>
-                        <div class="cart-product-container">
-                          <h4 class="cart-product-name">Product name</h4>
-                          <img class="close-button" src="./assets/icon/cancel.svg" alt="cancel button">
-                          <p class="cart-product-subname">Variant name</p>
-                          <div class="counter-container">
-                            <span class="decrease-icon"> - </span>
-                            <span class="product-number"> 2 </span>
-                            <span class="increase-icon"> + </span>
-                          </div>
-                          <h3 class="total-amount">£60.00</h3>
-                        </div>
-                      </li>
-                    </ul>
-                    <button class="checkout-button">CHECKOUT</button>
-                </div>
-            </div>
-            </div>
           </div>
         </div>
       </header>
+
+      <aside class="temp-cart">
+        <div class="cart-wrapper">
+          <div class="cart-main-container">
+            <span class="triangle">▲</span>
+            <h3 class="cart-headline">Your Cart</h3>
+            <div class="cart-list">
+                <ul>
+                  <li class="cart-item">
+                    <div class="cart-img-container">
+                      <img src="./assets/Image/Large.svg" alt="placeholder image">
+                    </div>
+                    <div class="cart-product-container">
+                      <h4 class="cart-product-name">Product name</h4>
+                      <img class="close-button" src="./assets/icon/cancel.svg" alt="cancel button">
+                      <p class="cart-product-subname">Variant name</p>
+                      <div class="counter-container">
+                        <span class="decrease-icon"> - </span>
+                        <span class="product-number"> 2 </span>
+                        <span class="increase-icon"> + </span>
+                      </div>
+                      <h3 class="total-amount">£60.00</h3>
+                    </div>
+                  </li>
+
+                  <li class="cart-item">
+                    <div class="cart-img-container">
+                      <img src="./assets/Image/Large.svg" alt="placeholder image">
+                    </div>
+                    <div class="cart-product-container">
+                      <h4 class="cart-product-name">Product name</h4>
+                      <img class="close-button" src="./assets/icon/cancel.svg" alt="cancel button">
+                      <p class="cart-product-subname">Variant name</p>
+                      <div class="counter-container">
+                        <span class="decrease-icon"> - </span>
+                        <span class="product-number"> 2 </span>
+                        <span class="increase-icon"> + </span>
+                      </div>
+                      <h3 class="total-amount">£60.00</h3>
+                    </div>
+                  </li>
+                </ul>
+                <button class="checkout-button">CHECKOUT</button>
+            </div>
+        </div>
+        </div>
+      </aside>
+
+
       <section class="carousel">
         <div id="left-arrow" class="arrow">
           <img src="./assets/icon/back.svg" alt="left arrow">
