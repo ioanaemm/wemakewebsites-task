@@ -1,5 +1,20 @@
- .slide {
+.slide-viewport {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.slide-container {
+  width: 1000000px;
   position: relative;
+  left: 0;
+  top: 0;
+  display: flex;
+}
+
+.slide {
+  position: relative;
+  width: 100vw;
+  max-width: 1600px;
 }
 
 .carousel {
@@ -52,10 +67,15 @@
 
 .carousel .arrow {
   position: absolute;
+  cursor: pointer;
   transform: translate(-50%, -50%);
   top: 50%;
   z-index: 1;
   text-align: center;
+}
+
+.carousel .arrow:hover {
+  opacity: 0.6;
 }
 
 .carousel #left-arrow {
