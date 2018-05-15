@@ -54,6 +54,12 @@ function addSliderMarkers() {
   for(var i = 0; i < slideCount; i++) {
     $('.carousel .markers').append($(marker));
   }
+  $('.carousel .marker').each(function(index, markerElement) {
+    $(markerElement).click(function() {
+      crtSlide = index;
+      animateSlider(1.5);
+    });
+  });
 }
 
 function refreshMarkers() {
@@ -72,7 +78,6 @@ function nextSlide() {
     crtSlide = 0;
   }
   animateSlider(1.5);
-  refreshMarkers();
 }
 
 function prevSlide() {
@@ -82,7 +87,6 @@ function prevSlide() {
     crtSlide = slideCount - 1;
   }
   animateSlider(1.5);
-  refreshMarkers();
 }
 
 function animateSlider(time) {
@@ -91,6 +95,7 @@ function animateSlider(time) {
     time /= 2;
   }
   TweenMax.to($('.slide-container'), time, {left: -crtSlide * viewportWidth, ease: Power2.easeInOut});
+  refreshMarkers();
 }
 
 function enableMobileNav() {
