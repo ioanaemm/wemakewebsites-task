@@ -22,7 +22,7 @@ function nextSlide() {
 }
 
 function prevSlide() {
-  if(crtSlide > 1) {
+  if(crtSlide > 0) {
     crtSlide--;
   } else {
     crtSlide = slideCount - 1;
