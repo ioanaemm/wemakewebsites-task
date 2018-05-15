@@ -15,6 +15,8 @@
   position: relative;
   width: 100vw;
   max-width: 1600px;
+  height: 500px;
+  background-size: cover;
 }
 
 .carousel {
@@ -86,9 +88,86 @@
   right: 50px;
 }
 
+@media(max-width: 1100px) {
+  .carousel .slide .content {
+    width: 70%;
+  }
+}
+
+@media(max-width: 900px) {
+  .carousel .slide .headline {
+    font-size: 45px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .carousel .slide button {
+    margin-top: 10px;
+  }
+}
+
 @media(max-width: 850px) {
   .iconContainer img,
   .iconContainer .shopping-cart > img {
     width: 18px;
+  }
+
+  .carousel #right-arrow {
+    right: 20px;
+  }
+
+  .carousel #left-arrow {
+    left: 40px;
+  }
+}
+
+@media(max-width: 767px) {
+  .slide {
+    height: 400px;
+  }
+}
+
+@media(max-width: 700px) {
+  .carousel .slide {
+    height: 350px;
+  }
+
+  .carousel .slide .headline {
+    font-size: 35px;
+  }
+
+  .carousel .slide .subheadline {
+    font-size: 14px;
+  }
+
+  .carousel .slide button {
+    font-size: 15px;
+    height: 40px;
+  }
+}
+
+@media(max-width: 500px) {
+  .carousel .slide {
+    height: 300px;
+  }
+
+  .carousel .slide .headline {
+    font-size: 25px;
+  }
+
+  .carousel .slide .subheadline {
+    font-size: 14px;
+  }
+
+  .carousel .slide button {
+    font-size: 15px;
+    height: 40px;
+  }
+
+  .carousel #right-arrow {
+    right: 0px;
+  }
+
+  .carousel #left-arrow {
+    left: 24px;
   }
 }
