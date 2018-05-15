@@ -1,6 +1,8 @@
 body {
   font-family: 'Roboto Mono', monospace;
   margin: 0;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 button {
@@ -19,6 +21,7 @@ main {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 }
 
 header.mobile {
@@ -30,7 +33,8 @@ header.mobile .column {
   width: calc(100% / 3);
 }
 
-.temp-cart {
+.temp-cart,
+.temp-nav {
   display: none;
 }
 
