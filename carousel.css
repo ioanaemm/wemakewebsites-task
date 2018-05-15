@@ -65,3 +65,10 @@
 .carousel #right-arrow {
   right: 50px;
 }
+
+@media(max-width: 850px) {
+  .iconContainer img,
+  .iconContainer .shopping-cart > img {
+    width: 18px;
+  }
+}
