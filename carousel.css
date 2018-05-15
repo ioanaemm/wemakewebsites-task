@@ -19,6 +19,14 @@
   background-size: cover;
 }
 
+.carousel .slide button {
+  cursor: pointer;
+}
+
+.carousel .slide button:hover {
+  background-color: #35597d;
+}
+
 .carousel {
   position: relative;
 }
