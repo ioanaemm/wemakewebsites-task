@@ -14,7 +14,28 @@
   display: none;
 }
 
-.shopping-cart:hover .cart-wrapper{
+header.mobile .cart-wrapper {
+  top: 10px;
+}
+
+header.mobile .cart-icon {
+  position: relative;
+  padding: 10px;
+  top: -10px;
+  right: -10px;
+}
+
+header.mobile .cart-wrapper {
+  padding-top: 0;
+  top: 40px;
+}
+
+header.mobile .triangle {
+  top: -12px;
+}
+
+
+header.desktop .shopping-cart:hover .cart-wrapper{
   display: block;
 }
 

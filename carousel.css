@@ -88,6 +88,32 @@
   right: 50px;
 }
 
+.carousel .markers {
+  position: absolute;
+  bottom: 10px;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+
+.carousel .markers .marker {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0.7;
+  margin-left: 5px;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.carousel .markers .marker.selected {
+  width: 14px;
+  height: 14px;
+  opacity: 1;
+  position: relative;
+  top: 1px;
+}
+
 @media(max-width: 1100px) {
   .carousel .slide .content {
     width: 70%;
